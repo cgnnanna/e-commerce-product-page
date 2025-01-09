@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Commerce Product Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaQuery.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+</head>
+
+<body>
+  <header>
+    <div class="mainNavigationMenu">
+      <!-- Hamburger menu icon -->
+      <div id="menuIcon"><img src="./images/icon-menu.svg" /></div>
+      <div>
+        <p id="productTitle">sneakers</p>
+      </div>
+      <nav class="navigationLinks">
+        <li><a class="navigationLink" href="#collections">Collections</a></li>
+        <li><a class="navigationLink" href="#men">Men</a></li>
+        <li><a class="navigationLink" href="#women">Women</a></li>
+        <li><a class="navigationLink" href="#about">About</a></li>
+        <li><a class="navigationLink" href="#contact">Contact</a></li>
+      </nav>
+    </div>
+    <div class="otherNavigationMenu">
+      <nav> <img src="./images/icon-cart.svg"> </nav>
+      <nav id="imgAvatar"><a class="navigationLink" href="#"><img src="./images/image-avatar.png"></a></nav>
+    </div>
+  </header>
+  <main class="heroSection">
+    <div class="mainDisplayWrapper">
+      <div class="carousel">
+        <button class="carousel-control prev">&lt;</button>
+        <img src="./images/image-product-1.jpg" alt="A pair of sneakers" id="displaySneakers">
+        <button class="carousel-control next">&gt;</button>
+      </div>
+      <div class="sneakersCollectionsWrapper">
+        <div class="sneakersCollection selected">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-1-thumbnail.jpg" alt="A pair of sneakers">
+        </div>
+        <div class="sneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-2-thumbnail.jpg" alt="A pair of sneakers">
+        </div>
+        <div class="sneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-3-thumbnail.jpg" alt="A sample single shoe">
+        </div>
+        <div class="sneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-4-thumbnail.jpg" alt="A sample single shoe">
+        </div>
+      </div>
+    </div>
+    <div class="sneakersDescriptionWrapper">
+      <div>
+        <h5 id="descriptionHeading">SNEAKER COMPANY</h5>
+        <h3 id="sneakersCategory">Fall Limited Edition Sneakers</h3>
+        <p id="sneakersCategorydescription">These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything the weather can offer</p>
+      </div>
+      <div>
+        <div id="sneakersDiscountBox">
+          <p id="discountedPrice">$125.00</p>
+          <p id="discountedRate"> 50%</p>
+        </div>
+        <p id="sneakersOriginalPrice">$250.00</p>
+        <div class="sneakersCostingWrapper">
+          <div class="sneakersQtyWrapper">
+            <button id="decreaseItemBtn"><img src="./images/icon-minus.svg"></button>
+            <p id="sneakerQty">0</p>
+            <button id="increaseItemBtn"><img src="./images/icon-plus.svg"></button>
+          </div>
+          <div>
+            <button id="addToCartBtn">
+              <img src="./images/icon-cart black.svg" alt="Cart Icon" class="cart-icon">
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Structure -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">x</span>
+      <div class="carousel">
+        <button class="carousel-control prev">&lt;</button>
+        <img src="./images/image-product-1.jpg" alt="A pair of sneakers" id="modalDisplaySneakers">
+        <button class="carousel-control next">&gt;</button>
+      </div>
+      <div class="sneakersCollectionsWrapper">
+        <div class="modalSneakersCollection selected">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-1-thumbnail.jpg" alt="A pair of sneakers">
+        </div>
+        <div class="modalSneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-2-thumbnail.jpg" alt="A pair of sneakers">
+        </div>
+        <div class="modalSneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-3-thumbnail.jpg" alt="A sample single shoe">
+        </div>
+        <div class="modalSneakersCollection">
+          <div class="sneakersOverlay"></div>
+          <img src="./images/image-product-4-thumbnail.jpg" alt="A sample single shoe">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

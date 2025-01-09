@@ -1,0 +1,75 @@
+@media only screen and (max-width: 576px) {
+    .navigationLinks {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 2% 7.5%;
+    }
+
+    .heroSection {
+        display: block;
+    }
+
+    #menuIcon {
+        display: block;
+    }
+
+    .sneakersCollectionsWrapper {
+        display: none;
+    }
+
+    .heroSection {
+        padding: 0;
+    }
+
+    .mainDisplayWrapper,
+    .sneakersDescriptionWrapper {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 500px;
+    }
+    #displaySneakers {
+        border-radius: 0px;
+    }
+    .prev {
+        left: 15px;
+    }
+    
+    .next {
+        right: 30px;
+    }
+    .sneakersDescriptionWrapper{
+        padding: 5%;
+    }
+    #descriptionHeading {
+        font-size: 18px;
+    }
+    #sneakersCategorydescription {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .navigationLinks {
+        display: none;
+    }
+
+    .heroSection {
+        display: block;
+    }
+
+    #menuIcon {
+        display: block;
+    }
+
+    .sneakersCollectionsWrapper {
+        display: none;
+    }
+}
