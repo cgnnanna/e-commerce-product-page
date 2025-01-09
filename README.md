@@ -1,4 +1,4 @@
-# E-Commerce Product Page Summary
+# E-Commerce Product ([url](https://cgnnanna.github.io/e-commerce-product-page/)
 
 This e-commerce product page was designed specifically for a **1440px viewport** and does not include responsive features for other screen sizes. Below is a summary of its components and characteristics:
 
