@@ -70,6 +70,29 @@ header {
     width: 100%;
 }
 
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    /* Hidden when count is 0 */
+}
+
 .heroSection {
     width: 100%;
     padding: 5%;
