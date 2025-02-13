@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalPrevButton = document.querySelector('.modal .prev');
   const modalNextButton = document.querySelector('.modal .next');
 
-
   const images = [
     './images/image-product-1.jpg',
     './images/image-product-2.jpg',
@@ -93,19 +92,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateMainDisplay(currentIndex); // Initialize the main display without showing the modal
 });
+
+// Quantity controls
 const decreaseItemButton = document.getElementById('decreaseItemBtn');
 const increaseItemButton = document.getElementById('increaseItemBtn');
+const addToCartButton = document.getElementById('addToCartBtn');
+const cartCountDisplay = document.getElementById('cart-count');
 
-let itemCount = parseInt(document.getElementById('sneakerQty').innerHTML, 10)
+let itemCount = 0;
+let totalCartItems = 0; // This will track the total number of items in the cart
 
 increaseItemButton.addEventListener('click', () => {
-  itemCount = itemCount + 1;
+  itemCount++;
   document.getElementById('sneakerQty').innerHTML = itemCount;
-})
+});
 
 decreaseItemButton.addEventListener('click', () => {
   if (itemCount > 0) {
-    itemCount = itemCount - 1;
+    itemCount--;
   }
   document.getElementById('sneakerQty').innerHTML = itemCount;
-})
+});
+
+addToCartButton.addEventListener('click', () => {
+  if (itemCount > 0) {
+    totalCartItems += itemCount; // Add selected quantity to cart
+    cartCountDisplay.textContent = totalCartItems;
+    cartCountDisplay.style.visibility = "visible"; // Show cart badge
+    itemCount = 0; // Reset selected quantity after adding to cart
+    document.getElementById('sneakerQty').innerHTML = itemCount;
+  }
+});
